@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "b20201af-0afe-4dac-88fb-7ee6d90e094b",
+		"name": "Post_Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25593751"
+	},
+	"item": [
+		{
+			"name": "Project-1",
+			"item": [
+				{
+					"name": "localhost:9091/payment-service/getprice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9091/payment-service/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"payment-service",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9091/payment-service/addprice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"Java\",\r\n    \"itemPrice\":125\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9091/payment-service/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"payment-service",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9092/instrument-service/instrument",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9092/instrument-service/instrument",
+							"host": [
+								"localhost"
+							],
+							"port": "9092",
+							"path": [
+								"instrument-service",
+								"instrument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9092/instrument-service/instrument",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"Oracle\",\r\n    \"itemPrice\":120\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9092/instrument-service/instrument",
+							"host": [
+								"localhost"
+							],
+							"port": "9092",
+							"path": [
+								"instrument-service",
+								"instrument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9090/instrument-service/instrument",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9090/instrument-service/instrument",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"instrument-service",
+								"instrument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9090/instrument-service/instrument",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"Python\",\r\n    \"itemPrice\":299\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9090/instrument-service/instrument",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"instrument-service",
+								"instrument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9090/payment-service/payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9090/payment-service/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"payment-service",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:9090/payment-service/payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"JavaScript\",\r\n    \"itemPrice\":499\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9090/payment-service/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"payment-service",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project-2",
+			"item": [
+				{
+					"name": "localhost:8080/student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"userName\":\"Devaj\",\r\n    \"bookName\":\"Java\",\r\n    \"issueDate\":\"16-05-2023\",\r\n    \"returnDate\":\"26-05-2023\",\r\n    \"period\":\"10\",\r\n    \"fine\":24\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
