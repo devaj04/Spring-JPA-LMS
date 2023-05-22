@@ -208,13 +208,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/student",
+							"raw": "localhost:8080/book",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"student"
+								"book"
 							]
 						}
 					},
@@ -227,7 +227,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":1,\r\n    \"userName\":\"Devaj\",\r\n    \"bookName\":\"Java\",\r\n    \"issueDate\":\"16-05-2023\",\r\n    \"returnDate\":\"26-05-2023\",\r\n    \"period\":\"10\",\r\n    \"fine\":24\r\n}",
+							"raw": "{\r\n    \"id\":1,\r\n    \"bookTitle\":\"Java\",\r\n    \"bookAuthor\":\"Vishwa\",\r\n    \"userIssued\":\"Devaj\",\r\n    \"issueDate\":\"16-05-2023\",\r\n    \"returnDate\":\"26-05-2023\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -235,13 +235,64 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/student",
+							"raw": "localhost:8080/book",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"student"
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/book?id=2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/book?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"book"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"bookTitle\":\"Java\",\r\n    \"bookAuthor\":\"Vishwa\",\r\n    \"userIssued\":\"Devaj Dev\",\r\n    \"issueDate\":\"16-05-2023\",\r\n    \"returnDate\":\"26-05-2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"book"
 							]
 						}
 					},
