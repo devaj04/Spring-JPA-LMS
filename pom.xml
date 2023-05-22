@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.trigyn</groupId>
-	<artifactId>Spring-JPA-LMS</artifactId>
+	<artifactId>Library_Management_System</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring-JPA-LMS</name>
+	<name>Library_Management_System</name>
 	<description>Spring Boot Application for Spring-JPA-LMS</description>
 	<properties>
 		<java.version>1.8</java.version>
